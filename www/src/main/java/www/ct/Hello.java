@@ -9,4 +9,7 @@ public class Hello {
     public String gete(){
         return "hello";
     }
+    public void test(){
+
+    }
 }
