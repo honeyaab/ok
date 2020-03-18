@@ -13,7 +13,10 @@ public class Controller {
     @Autowired
     private RedisTemplate redisTemplate;
 
+
     int a;
+
+    String  m="";
 
     @PostMapping("/save")
     public void save(@RequestBody Student student){
