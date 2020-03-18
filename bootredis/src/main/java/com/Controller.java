@@ -13,6 +13,7 @@ public class Controller {
     @Autowired
     private RedisTemplate redisTemplate;
 //zheshi dev2分支
+    //远程有dev2吗
     @PostMapping("/save")
     public void save(@RequestBody Student student){
         redisTemplate.opsForValue().set("student",student);
