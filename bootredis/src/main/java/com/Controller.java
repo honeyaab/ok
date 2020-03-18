@@ -13,6 +13,8 @@ public class Controller {
     @Autowired
     private RedisTemplate redisTemplate;
 
+    int a;
+
     @PostMapping("/save")
     public void save(@RequestBody Student student){
         redisTemplate.opsForValue().set("student",student);
