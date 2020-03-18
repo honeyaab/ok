@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class Controller {
     @Autowired
     private RedisTemplate redisTemplate;
+     private int i;
     @PostMapping("/save")
     public void save(@RequestBody Student student){
         redisTemplate.opsForValue().set("student",student);
